@@ -1,12 +1,12 @@
 # Site settings
-title:
-email:
+title: KALISTA IO
+email: info@kalista.io
 description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "" # the base hostname & protocol for your site
 
-twitter_username:
-github_username:
+twitter_username: kalista_io
+github_username: kalista-io
 
 # Build settings
 markdown: kramdown

@@ -120,9 +120,9 @@ aside {
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: rgba(white, .7);
+            color: rgba(black, .7);
             &:hover {
-                color: white;
+                color: "green";
             }
         }
         &.affix {
@@ -150,22 +150,108 @@ aside {
 // Homepage Header
 
 header {
-    position: relative;
+    position: top;
     width: 100%;
     min-height: auto;
     @include background-cover;
-    background-position: center;
+    background-position: top center;
     background-image: url('../img/header.jpg');
+    #background-size: contain;
+    background-repeat: no-repeat;
+
     text-align: center;
-    color: white;
+    color: black;
     .header-content {
         position: relative;
+        top: 10%;
         text-align: center;
-        padding: 100px 15px 100px;
+        padding: 100px 20px 250px;
         width: 100%;
         .header-content-inner {
+            h0 {
+                /* Extra small devices (phones, less than 768px) */
+                font-family: 'Raleway', sans-serif;
+                font-size: 300%;
+                font-weight: 900;
+                text-transform: uppercase;
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #434343;
+
+                /* Small devices (tablets, 768px and up) */
+                @media (min-width: 768px) {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 900%;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: #434343;
+                }
+
+                /* Medium devices (desktops, 992px and up) */
+                @media (min-width: 992px) {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 980%;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: #434343;
+                }
+
+                /* Large devices (large desktops, 1200px and up) */
+                @media (min-width: 1200px) {
+                    font-family: 'Raleway', sans-serif;
+                    font-size: 980%;
+                    font-weight: 2000;
+                    text-transform: uppercase;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    olor: #434343;
+                }
+            }
+
+            h7 {
+                /* Extra small devices (phones, less than 768px) */
+                font-family: 'Lato', sans-serif;
+                font-size: 80%;
+                font-weight: 900;
+                color: rgba(black, .8);
+                margin-bottom: 50px;
+
+                /* Small devices (tablets, 768px and up) */
+                @media (min-width: 768px) {
+                    font-family: 'Lato', sans-serif;
+                    font-size: 250%;
+                    font-weight: 900;
+                    color: rgba(black, .8);
+                    margin-bottom: 50px;
+                }
+
+                /* Medium devices (desktops, 992px and up) */
+                @media (min-width: 992px) {
+                    font-family: 'Lato', sans-serif;
+                    font-size: 250%;
+                    font-weight: 900;
+                    color: rgba(black, .8);
+                    margin-bottom: 50px;
+                }
+
+                /* Large devices (large desktops, 1200px and up) */
+                    @media (min-width: 1200px) {
+                    font-family: 'Lato', sans-serif;
+                    font-size: 250%;
+                    font-weight: 900;
+                    color: rgba(black, .8);
+                    margin-bottom: 50px;
+                }
+            }
+
             h1 {
-                font-weight: 700;
+                font-family: 'Raleway', sans-serif;
+                font-size: 110%;
+                font-weight: 900;
                 text-transform: uppercase;
                 margin-top: 0;
                 margin-bottom: 0;
@@ -173,19 +259,45 @@ header {
             hr {
                 margin: 30px auto;
             }
+
+            /*
             p {
                 font-weight: 300;
                 color: rgba(white, .7);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
+            */
         }
     }
     @media (min-width: 768px) {
         min-height: 100%;
         .header-content {
+            position: relative;
+            top: 20%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            padding: 0 50px;
+            .header-content-inner {
+                max-width: 1000px;
+                margin-left: auto;
+                margin-right: auto;
+                p {
+                    font-size: 18px;
+                    max-width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        min-height: 100%;
+        .header-content {
             position: absolute;
-            top: 50%;
+            top: 20%;
             -webkit-transform: translateY(-50%);
             -ms-transform: translateY(-50%);
             transform: translateY(-50%);
