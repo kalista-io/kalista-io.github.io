@@ -51,6 +51,25 @@ p {
     color: white;
 }
 
+.bg-black {
+    background-image: linear-gradient($theme-dark, black);
+    color: white;
+}
+
+.equal-height {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    #flex-direction: column;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .text-faded {
     color: rgba(white, .7);
 }
