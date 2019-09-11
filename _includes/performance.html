@@ -1,85 +1,86 @@
 <section class="no-padding">
     <div style="position: relative; text-align: center;">
-        <img src="img/performance/road-blur.png" style="object-fit: fit;width: 100%;height: auto;">
+        <img src="img/performance/header.jpeg" style="object-fit: fit;width: 100%;height: auto;">
     </div>
 </section>
 
-<section class="no-padding">
-    <aside class="bg-black">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>
-                    <font style="font-weight:700">Benchmarks and profiles</font>
-                </h2>
-                <hr class="primary">
-            </div>
-        </div>
-    </aside>
-</section>
 
 <section>
-    <div class="container">
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>
+                Benchmarks and IO profiles
+            </h2>
+            <hr class="primary">
+        </div>
+    </div>
+
+    <div class="container text-left">
         <div class="row" style="margin:auto">
-            <div class="text-left">
-                <h3>
-                    Business and ideas don't wait. Neither should you.
-                </h3>
-                <p>
-                    Moving at the speed of business demands the best from your IT infrastructure. Olympus offers the agility, resilency and performance that are required to keep your organization growing. Olympus is designed and optimized for modern software-defined environments and next generation storage devices - everything needed to maximize your ogranzation's operational agility while minimize the total cost of ownership (TCO). With an unique row/column architecture, Olympus is able to utilize every IOPS and throughput of each device by minimizing IO contention, device overhead and preventing hot write areas. Let Olympus help you move at the speed of business.
-                </p>
-            </div>
+            <div class="col-lg-12 col-md-12">
 
-            <br>
-            <br>
-
-            <p>
-                Every application workload is different and every business requirement unique - no single benchmark nor trace can capture the whole user experience. However, it is useful to profile IO performance and usage patterns before committing to a storage solution or configuration. Below is a simple trace comparison between Olympus and an <a href="https://en.wikipedia.org/wiki/Ext4">ext4</a> file system to show what makes Olympus fast and efficient.
-            </p>
-
-            <br>
-            <br>
-
-            <div class="container-fluid">
-                <div class="row equal-height">
-
-                    <div class="col-lg-6 col-md-6 text-center">
-                        <p>
-                        <b>Olympus</b>
-                        </p>
-                        <img src="img/performance/20x-100MB-writes/phalanx.png" style="object-fit: fit; width: 100%;height: auto;">
-                    </div>
-
-                    <div class="col-lg-6 col-md-6 text-center">
-                        <p>
-                        <b>ext4</b>
-                        </p>
-                       <img src="img/performance/20x-100MB-writes/ext4.png" style="object-fit: fit; width: 100%;height: auto;">
-                    </div>
-
+                <div class="text-left">
+                    <h4>
+                        <b>Business and ideas don't wait. Neither should you.</b>
+                    </h4>
+                    <p>
+                        Moving at the speed of business demands the best from your IT infrastructure. Olympus offers the agility, resilency and performance that are required to keep your organization growing. Olympus is designed and optimized for modern software-defined environments and next generation storage devices - everything needed to maximize your ogranzation's operational agility while minimize the total cost of ownership (TCO). With an unique row/column architecture, Olympus is able to utilize every IOPS and throughput of each device by minimizing IO contention, device overhead and preventing hot write areas. Let Olympus help you move at the speed of business.
+                    </p>
                 </div>
+
+                <br>
+                <br>
+
+                <p>
+                    Every application workload is different and every business requirement unique - no single benchmark nor trace can capture the whole user experience. However, it is useful to profile IO performance and usage patterns before committing to a storage solution or configuration. Below is a simple trace comparison between Olympus and an <a href="https://en.wikipedia.org/wiki/Ext4">ext4</a> file system to show what makes Olympus fast and efficient.
+                </p>
+
+                <br>
+                <br>
+
+                <div class="container-fluid">
+                    <div class="row equal-height">
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>Olympus</b>
+                            </p>
+                            <img src="img/performance/20x-100MB-writes/phalanx.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>ext4</b>
+                            </p>
+                           <img src="img/performance/20x-100MB-writes/ext4.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <p>
+                    Above shows what happens when we write twenty 100MB files sequentially using 64KB record size. With ext4, the storage device executed approximately 287 seeks (12.59 avg seek/sec * 22.87 sec) to complete the write. In contrast, Olympus wasted no device cycles on seeks and translated that efficency into a better overall throughput (MB/s) and latency (IOPS) for the user.
+                </p>
+
+                <br>
+                <br>
+
+                <p>
+                    Olympus is not a panacea for every IT challenge. Nor can simple IO trace comparisons and benchmarks sufficiently capture and explain the unqiue advantages of Olympus and the whole user experience. We will be adding more information in the coming weeks. Meanwhile, we invite you to connect with us to discuss your business requirements and see if Olympus is a good fit for your organization.
+                </p>
+
+                <br>
+                <br>
+
+                <p>
+                    Interested to know more? Have a specific workload you would like to profile?<br>
+                    Contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </p>
+
             </div>
-
-            <br>
-            <br>
-
-            <p>
-                Above shows what happens when we write twenty 100MB files sequentially using 64KB record size. With ext4, the storage device executed approximately 287 seeks (12.59 avg seek/sec * 22.87 sec) to complete the write. In contrast, Olympus wasted no device cycles on seeks and translated that efficency into a better overall throughput (MB/s) and latency (IOPS) for the user.
-            </p>
-
-            <br>
-            <br>
-
-            <p>
-                Olympus is not a panacea for every IT challenge. Nor can simple IO trace comparisons and benchmarks sufficiently capture and explain the unqiue advantages of Olympus and the whole user experience. We will be adding more information in the coming weeks. Meanwhile, we invite you to connect with us to discuss your business requirements and see if Olympus is a good fit for your organization.
-            </p>
-
-            <br>
-            <br>
-
-            <p>
-                Interested to know more? Have a specific workload you would like to profile?<br>
-                Contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>
-            </p>
         </div>
     </div>
 </section>
