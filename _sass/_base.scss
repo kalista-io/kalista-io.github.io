@@ -76,6 +76,11 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
 .std-padding {
     padding: 15px;
 }
