@@ -1,0 +1,374 @@
+<section class="no-padding">
+    <div style="position: relative; text-align: center;">
+        <img src="img/performance/header.jpeg" style="object-fit: fit; width: 100%; height: auto;">
+    </div>
+</section>
+
+
+<section>
+    <div class="container text-center">
+        <div class="call-to-action">
+            <h2>
+                Performance
+            </h2>
+            <hr class="primary">
+        </div>
+    </div>
+
+    <div class="container text-left">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                 <p>
+                    Business and ideas don't wait. Neither should you. Moving at the speed of business demands the best from your IT infrastructure. Olympus offers the agility, resilency and performance that are required to keep your organization growing. Olympus is designed and optimized for modern software-defined environments and next generation storage devices - everything needed to maximize your ogranzation's operational agility while minimize the total cost of ownership (TCO). With an unique row & column architecture, Olympus is able to utilize every IOPS and throughput of each device by minimizing IO contention, device overhead and preventing hot write areas. Let Olympus help you move at the speed of business.
+                </p>
+            </div>
+        </div>
+    </div>
+
+     <div class="container text-left">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 text-center">
+                <img src="img/performance/clouds.jpeg" style="object-fit: fit; width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="container text-left">
+            <div class="row equal-height">
+                <div class="col-lg-6 col-md-6 text-center" style="align-self: center; justify-content: center; margin: auto;">
+                    <h1>
+                        <font color="#980000" style="font-weight:900">
+                            Storage without compromise
+                        </font>
+                        
+                    </h1>
+                </div>
+
+                <div class="col-lg-6 col-md-6 text-left">
+                    <img src="img/performance/clouds.jpeg" style="object-fit: fit; width: 100%; height: auto;">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-left">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                <h4>
+                    <b>IO profile</b>
+                </h4>
+
+                <p>
+                    Every application workload is different and every business requirement unique. No single benchmark nor trace can capture the whole user experience. However, it is useful to profile IO performance and usage patterns before committing to a storage solution or configuration. Below is a simple IO trace comparison between Phalanx (Olympus' storage engine) and an <a href="https://en.wikipedia.org/wiki/Ext4">ext4</a> installation to show what makes Olympus fast and efficient.
+                </p>
+
+                <div class="container-fluid">
+                    <div class="row equal-height">
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>Olympus</b>
+                            </p>
+                            <img src="img/performance/20x-100MB-writes/phalanx.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>ext4</b>
+                            </p>
+                           <img src="img/performance/20x-100MB-writes/ext4.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <p>
+                    Above shows what happens when we write twenty 100MB files sequentially using 64KB record size. With ext4, the storage device executed approximately 287 seeks (12.59 avg seek/sec * 22.87 sec) to complete the write. In contrast, Phalanx wasted no device cycles on seeks and translated that efficency into a better overall throughput (MB/s) and latency (IOPS) for the user.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="thin">
+
+    <div class="container text-left">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                <h4>
+                    <b>Flexible I/O tester (fio) benchmarks</b>
+                </h4>
+
+                <p>
+                    3.3GB/s write performance
+2.8GB/s read performance
+
+Packing all that performance into such a slim all-in-one design required a new approach to cooling the system. We redesigned the thermal architecture of iMac Pro with innovative dual blowers, a high-capacity heatsink, and extra venting. The result? Almost 75 percent more airflow and an 80 percent increase in system thermal capacity. 
+                </p>
+
+                <p>
+                    iMac Pro is optimized for performance across the board. Here’s how it compares to iMac and Mac Pro.asdasdasd
+                    The enhanced stereo speakers in iMac Pro deliver broad frequency response, rich bass, and impressive volume. So you’ll be able to hear that crashing cymbal, multilayered effect, or sample-based sound, all with remarkable fidelity.
+                </p>
+
+                <p>
+                    It’s packed with the most powerful graphics and processors ever in a Mac, along with the most advanced storage, memory, and I/O — all behind the most advanced storage platform, in a sleek, simple turnkey design.
+
+                    Phalanx delivers the best performance of any storage system.
+                    The first gneral purpose storage system that enables Apache Hadoop and Ceph storage clusters to finally benefit from Host Managed SMR technology/
+                    This translates to higher performance consistency, predictability and a lower TCO.
+                </p>
+
+                <p>
+                    <a href="resources/performance/phalanx-fio-benchmarks.pdf">Phalanx fio benchmarks</a><br>
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <hr class="thin">
+
+    <div class="container text-left">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                <div class="text-center">
+                    <img src="img/performance/hadoop-logo.png" style="object-fit: fit; width: 50%;height: auto;">
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                <h4>
+                    <b>Hadoop TestDFSIO benchmarks</b>
+                </h4>
+
+                <p>
+                    Apache Hadoop is a collection of open-source software utilities that facilitate using a network of many computers to solve problems involving massive amounts of data and computation. It provides a software framework for distributed storage and processing of big data using the MapReduce programming model. <a href="https://en.wikipedia.org/wiki/Apache_Hadoop">https://en.wikipedia.org/wiki/Apache_Hadoop</a>
+                </p>
+
+                <p>
+                    TestDFSIO is a benchmark tool included in Hadoop distributions which measures the peformance of a Hadoop Distributed File System (HDFS) cluster to read and write data. It is intended to give an estimate of the amount of available IO bandwidth to process data.
+                </p>
+
+                <p>
+                   Graph below shows TestDFSIO benchmark results when a Hadoop DataNode was deployed using Phalanx vs conventional ext4 and XFS. Note that Phalanx was paired with <a href="https://www.westerndigital.com/products/data-center-drives/ultrastar-dc-hc600-series-hdd">WD Ultrastar DC HC620</a> (<a href="https://en.wikipedia.org/wiki/Shingled_magnetic_recording">Host Managed SMR</a> device). While ext4 and XFS were paired with <a href="https://www.westerndigital.com/products/data-center-drives/ultrastar-dc-hc500-series-hdd">WD Ultrastar DC HC530</a> (legacy <a href="https://en.wikipedia.org/wiki/Perpendicular_recording">CMR</a> device).
+                </p>
+
+                <div class="container-fluid">
+                    <div class="row equal-height">
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>TestDFSIO read benchmarks</b>
+                            </p>
+                            <img src="img/performance/testdfsio-reads.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>TestDFSIO write benchmarks</b>
+                            </p>
+                           <img src="img/performance/testdfsio-writes.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <p>
+                    Hadoop does not natively support next generation storage technologies such as Host Managed SMR, nor can it intelligently prioritize incoming IO requests. These deficiencies lead to higher TCO and inconsistent performances at scale. With Phalanx, Hadoop can transparently utilize Host Managed SMR devices without needing application or kernel changes. TestDFSIO benchmark results shows that not only can Phalanx help users deploy and utilize advanced storage technologies such as Host Managed SMR and intelligent IO queue management in large scale distributed data processing systems. Users no longer have to compromise on performance for increased storage density and lower TCO.
+                </p>
+                <p>
+                    Read the complete benchmark report <a href="resources/performance/phalanx-hadoop-benchmarks.pdf">here</a><br>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <hr class="thin">
+
+
+    <div class="container text-left">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                <div class="text-center">
+                    <img src="img/performance/ceph-logo.png" style="object-fit: fit; width: 50%;height: auto;">
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                <h4>
+                    <b>Ceph OSD and Rados benchmarks</b>
+                </h4>
+
+                <p>
+                    Ceph is a free-software storage platform, implements object storage on a single distributed computer cluster, and provides interfaces for object-, block- and file-level storage. Ceph aims primarily for completely distributed operation without a single point of failure, scalable to the exabyte level, and freely available.
+                    <a href="https://en.wikipedia.org/wiki/Ceph_(software)">https://en.wikipedia.org/wiki/Ceph_(software)</a><br>
+
+                </p>
+
+                <p>
+                    Ceph Object Storage Daemon (OSD) bench is a benchmark tool that is included in Ceph distributions which measures the performance of a storage node to write data. It is intended to give an estimate of the amount of available write throughput in a particular storage node.
+                </p>
+
+                <p>
+                    Rados bench is yet another benchmark tool included in Ceph distributions which measures the performance of a Reliable Autonomic Distributed Object Store (RADOS) cluster to store and retrieve objects. Rados bench tests writing and sequential/random reading of objects. It is designed to give an estimate on number of objects the storage cluster can store and retrieve per second.
+                </p>
+
+                <p>
+                    The graph below shows OSD bench results when a Ceph storage node was deployed using Phalanx vs conventional ext4 and XFS. Note that Phalanx was paired with <a href="https://www.westerndigital.com/products/data-center-drives/ultrastar-dc-hc600-series-hdd">WD Ultrastar DC HC620</a> (<a href="https://en.wikipedia.org/wiki/Shingled_magnetic_recording">Host Managed SMR</a> device). While ext4 and XFS were paired with <a href="https://www.westerndigital.com/products/data-center-drives/ultrastar-dc-hc500-series-hdd">WD Ultrastar DC HC530</a> (legacy <a href="https://en.wikipedia.org/wiki/Perpendicular_recording">CMR</a> device).
+                </p>
+
+                <div class="container-fluid">
+                    <div class="row equal-height">
+
+                        <div class="col-lg-12 col-md-12 text-center">
+                            <p>
+                            <b>OSD bench results (1GB write in 4MB increments)</b>
+                            </p>
+                            <img src="img/performance/osd-bench.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <p>
+                    The graph below shows Rados bench results. Note that Phalanx consistently 
+                </p>
+
+                <div class="container-fluid">
+                    <div class="row equal-height">
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>Rados bench write results (4MB obj size, 4MB op size, 16 threads)</b>
+                            </p>
+                            <img src="img/performance/testdfsio-reads.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>Rados bench write results (1MB obj size, 1MB op size, 64 threads)</b>
+                            </p>
+                           <img src="img/performance/testdfsio-writes.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+
+                <div class="row equal-height">
+
+                    <div class="col-lg-6 col-md-6 text-left">
+                         <p>
+                            Finally, the graph below expands on the performance variation captured by Rados bench during object writes. Here, lower numbers are better. Note that there is an order of magnitude difference between Phalanx and ext4/XFS. This is because Phalanx is designed to minimize device contentions and reduce hot write areas. Translating into better and more consistent performance everywhere.
+                        </p>
+
+                        <p>
+                            <b>Std dev (Rados bench write, 4MB obj size, 4MB op size, 16 threads)</b>
+                        </p>
+                        <img src="img/performance/testdfsio-reads.png" style="object-fit: fit; width: 100%;height: auto;">
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-6 text-center" style="align-self: center; justify-content: center; margin: auto;">
+                        <h1>
+                            <font color="#980000" style="font-weight:900">
+                                10x<br>
+                                performance consistency
+                            </font>
+                        </h1>
+                    </div>
+
+                </div>
+
+                <br>
+                <br>
+
+                <div class="container-fluid">
+                    <div class="row equal-height">
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>Std dev (Rados bench write, 4MB obj size, 4MB op size, 16 threads)</b>
+                            </p>
+                            <img src="img/performance/testdfsio-reads.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 text-center">
+                            <p>
+                            <b>Std dev (Rados bench write, 1MB obj size, 1MB op size, 64 threads)</b>
+                            </p>
+                           <img src="img/performance/testdfsio-writes.png" style="object-fit: fit; width: 100%;height: auto;">
+                        </div>
+
+                    </div>
+                </div>
+
+                <br>
+                <br>
+
+                <p>
+                    Ceph does not natively support Host Managed SMR devices nor is it designed to minimize device contentions and reduce hot write areas.
+                    These result in scalability issues and long tail latencies. Phalanx can help Ceph to be storage optimized and future ready without requiring application or kernel changes. Designed for simplicity and peformance, Phalanx enables Ceph to scale performance with capacity. The OSD and Rados bench results show that not only does Phalanx achieve a higher read and write throughput. Performance variability is also reduced dramatically, resulting in more predictable and consistent performance at scale.
+
+                    With four channels of memory, iMac Pro can now accommodate up to 256GB. So you can visualize, simulate, and render huge 3D models. Create multiple test environments for cross-platform development. And keep numerous apps open at the same time. It’s all powerful. For all the things you want to do.
+                </p>
+
+                <p>
+                    Read the complete benchmark report <a href="resources/performance/phalanx-ceph-benchmarks.pdf">here</a><br>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <hr class="thin">
+
+    <div class="container text-left">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                <h4>
+                    <b>Summary</b>
+                </h4>
+
+                <p>
+                    All-in-one design. More creative freedom.
+iMac Pro puts the power of a workstation behind a stunning Retina 5K display, in a sleek enclosure just 5 mm wide at its edge. With your whole system powered by a single cable, your workspace stays free of clutter. It’s a beautifully efficient design that lets you focus all your attention on what you’re creating — not what you’re creating with.
+                    Olympus puts the power of next generation storage technologies at your finger tips. With an innovative It has the power to effortlessly handle multiple streams of ingress and egress data. 
+                    Olympus is designed to perform. Olympus is not a panacea for every IT challenge. Nor can simple IO trace comparisons and benchmarks sufficiently capture and explain the unqiue advantages of Olympus and the whole user experience. Meanwhile, we invite you to connect with us to discuss your business requirements and see if Olympus is a good fit for your organization.
+                </p>
+
+                <br>
+                <br>
+
+                <p>
+                    Interested to know more? Have a specific workload you would like to profile?<br>
+                    Contact us at <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
