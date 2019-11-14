@@ -70,6 +70,14 @@ p {
     color: black;
 }
 
+.bg-light-grey {
+    background-color: $light-grey;
+}
+
+.bg-grey {
+    background: linear-gradient(to bottom, #ebe9f2, #fbfafc);
+}
+
 .equal-height {
     display: flex;
     display: -webkit-flex;
