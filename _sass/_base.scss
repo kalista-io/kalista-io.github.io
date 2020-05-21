@@ -166,6 +166,37 @@ aside {
     padding: 0;
 }
 
+.no-margin {
+    margin: 0;
+}
+
+li.footnotes {
+    margin-bottom: 10px;
+}
+
+div.footnotes {
+    font-size: 90%;
+}
+
+a.footnote-reference:hover {
+    text-decoration: none;
+}
+
+a.footnote-reference:active
+{
+    text-decoration: none;
+}
+
+a.footnote-reference:link
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a.footnote-reference:visited {
+    text-decoration: none;
+}
+
 // Navigation
 
 .navbar-default {
@@ -560,3 +591,23 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+.btn.joint-solution-brief {
+    @include button-variant(white, $dark-grey, $dark-grey);
+    font-family: inherit;
+    text-transform: none;
+}
+
+hr.secondary {
+    border-color: $theme-dark;
+    border-width: 1px;
+    border-style: dashed;
+    max-width: 80px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: $theme-dark;
+    border-radius: 50%;
+    display: inline-block;
+}

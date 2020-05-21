@@ -17,4 +17,12 @@ function changeBackground()
 
 $(document).ready(function() {
     changeBackground();
-}); 
+});
+
+
+function showMore(elementID)
+{
+    var e = document.getElementById(elementID);
+
+    e.style.display = "inline";
+}
