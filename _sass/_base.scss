@@ -78,6 +78,10 @@ p {
     background: linear-gradient(to bottom, #ebe9f2, #fbfafc);
 }
 
+.bg-solid-grey {
+    background-color: #f5f5f7;
+}
+
 .equal-height {
     display: flex;
     display: -webkit-flex;
@@ -135,6 +139,25 @@ p {
 {
     padding: 15px;
 }
+
+.hot-pink {
+    color: #ff1d8e;
+}
+
+img.vertical-center-align-image
+{
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin:auto;
+    max-height: 100%;
+    max-width: 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
 
 .parallax {
   /* The image used */
