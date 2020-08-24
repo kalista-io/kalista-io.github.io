@@ -8,6 +8,22 @@ body {
     @include serif-font;
 }
 
+@font-face {
+    font-family: Raleway;
+    src: url('/fonts/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Raleway-Thin;
+    src: url('/fonts/Raleway-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Raleway-Light;
+    src: url('/fonts/Raleway-Light.ttf') format('truetype');
+}
+
+
 hr {
     border-color: $theme-primary;
     border-width: 3px;
@@ -143,6 +159,16 @@ p {
 .hot-pink {
     color: #ff1d8e;
 }
+
+.lnum {
+    font-variant-numeric: lining-nums;
+    -moz-font-feature-settings: "lnum" 1;
+    -moz-font-feature-settings: "lnum=1";
+    -ms-font-feature-settings: "lnum" 1;
+    -o-font-feature-settings: "lnum" 1;
+    -webkit-font-feature-settings: "lnum" 1;
+    font-feature-settings: "lnum" 1;
+  }
 
 img.vertical-center-align-image
 {

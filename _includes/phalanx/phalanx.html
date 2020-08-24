@@ -207,10 +207,18 @@
                         Device friendly and intelligent.
                     </font>
                     <font class="mid-grey">
+                        Phalanx is designed to enable storage devices to perform at their best.
+                        Device awareness and semantic intelligence are built into every IO —
+                        enabling user experiences and performances that simply aren't found on any other storage system.
+                    </font>
+
+                    <!--
+                        We build Phalanx with a focus to enable storage devices to perform at their best.
                         Phalanx intelligently prioritizes IO requests and eliminates device contention and unnecessary work.
                         This enables storage devices to perform at their best.
                         That means better performance and a lower cost of ownership.
-                    </font>
+                        That means better performance and a lower cost of ownership.
+                    -->
                 </h3>
             </div>
         </div>
@@ -226,10 +234,12 @@
                         A profile in latencies.
                     </font>
                     <font class="mid-grey">
-                        This is a histogram of response times when overwriting a file 600,000 times with legacy software<sup style="font-weight:90; font-size: 60%;"><a href="#footnote-1" class="footnote-reference">1</a></sup>.
-                        Notice the wide distribution of latencies. This is the "long tail" that causes unpredicable performances in storage systems.
-                        <!-- extreme large variability in latencies -->
+                        This is a histogram of IO latencies when modifying a file 600,000 times using legacy software with a conventional HDD<sup style="font-weight:90; font-size: 60%;"><a href="#footnote-1" class="footnote-reference">1</a></sup>.
                     </font>
+
+                    <!--
+                        Variability of response time
+                    -->
                 </h1>
             </div>
         </div>
@@ -241,7 +251,33 @@
     <div class="container text-left">
         <div class="row" style="margin:auto">
             <div class="col-lg-12 col-md-12 text-center" style="align-self: center; justify-content: center; margin: auto;">
-                <img src="/img/phalanx/tail-latency/legacy-transparent.png" style="object-fit: fit; width: 100%; height: auto;">
+                <img src="/img/phalanx/tail-latency/legacy-tail-latency.png" style="object-fit: fit; width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container text-left">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                 <h1>
+                    <font class="mid-grey">
+                        The large variability of response time (<font class="black">long tail</font>) leads to unpredictable and inconsistent performance at any scale.
+                        <!-- extreme large variability in latencies -->
+                        <!-- wide distribution of latencies -->
+
+                        <!--
+                            Affecting user experience for interative services.
+                            which leads to
+                            inconsistent performance at any scale.
+                            The large variation of command response times - the "<font class="black">long tail latency</font>" is a source of which leads to
+                            inconsistent performance at any scale.
+                            Leads to user experience for interative services.
+                        -->
+                    </font>
+                </h1>
             </div>
         </div>
     </div>
@@ -254,11 +290,11 @@
             <div class="col-lg-12 col-md-12">
                  <h1>
                     <font class="dark-red">
-                        Compare and contrast<sup style="font-weight:90; font-size: 60%;"><a href="#footnote-1" class="footnote-reference">2</a></sup>.
+                        Compare and contrast.
                     </font>
                     <font class="mid-grey">
-                        Here is the result with Phalanx. By streamlining IO operations Phalanx is able to deliver more consistent response times and better percentile latencies.
-                        This means a more consistent and predictable performance at scale.
+                        Results from Phalanx with a Host Managed SMR HDD<sup style="font-weight:90; font-size: 60%;"><a href="#footnote-1" class="footnote-reference">2</a></sup>
+                        shows a transformative difference.
                     </font>
                 </h1>
             </div>
@@ -271,7 +307,196 @@
     <div class="container text-left">
         <div class="row" style="margin:auto">
             <div class="col-lg-12 col-md-12 text-center" style="align-self: center; justify-content: center; margin: auto;">
-                <img src="/img/phalanx/tail-latency/phalanx-transparent.png" style="object-fit: fit; width: 100%; height: auto;">
+                <img src="/img/phalanx/tail-latency/phalanx-tail-latency.png" style="object-fit: fit; width: 100%; height: auto;">
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container text-left">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                 <h1>
+                    <font class="dark-red">
+                        Phalanx be quick.
+                    </font>
+                    <font class="mid-grey">
+                        The response times are not only more consistent, but also faster. Much faster.
+                    </font>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12 text-center" style="margin: auto;">
+                <div class="text-right">
+                    <h2>
+                        Percentile latencies (usec)
+                    </h2>
+                </div>
+                <table style="width: 100%; margin: auto; border-collapse: collapse; border-spacing: 0;">
+                    <thead style="border-bottom: 1px solid #ccc;">
+                        <tr>
+                            <th class="text-right" style="word-break:normal; padding:10px">
+                            </th>
+                            <th class="text-right lnum" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    Kalista Phalanx
+                                    <br>
+                                    with
+                                    <br>
+                                    Ultrastar HC620
+                                </h3>
+                            </th>
+                            <th class="text-right lnum" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    Legacy stack
+                                    <br>
+                                    with
+                                    <br>
+                                    Ultrastar HC530
+                                </h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-right lnum  dark-grey" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    99%
+                                </h3>
+                            </td>
+                            <td class="text-right lnum dark-red" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    16,924
+                                </h3>
+                            </td>
+                            <td class="text-right lnum mid-grey" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    28,468
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right lnum  dark-grey" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    99.95%
+                                </h3>
+                            </td>
+                            <td class="text-right lnum dark-red" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    26,211
+                                </h3>
+                            </td>
+                            <td class="text-right lnum mid-grey" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    97,371
+                                </h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-right lnum dark-grey" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    99.99%
+                                </h3>
+                            </td>
+                            <td class="text-right lnum dark-red" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    41,736
+                                </h3>
+                            </td>
+                            <td class="text-right lnum mid-grey" style="word-break:normal; padding:10px;">
+                                <h3>
+                                    202,227
+                                </h3>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container text-left">
+        <div class="row equal-height" style="margin:auto">
+            <div class="col-lg-3 col-md-3 text-left no-padding" style="font-family: lato; margin: auto;">
+                <div>
+                    <span class="dark-grey" style="font-weight: 100; font-size: 20px">
+                        Up to
+                    </span>
+                    <br>
+                    <span class="dark-red" style="font-weight: 100; font-size: 135px; line-height: 100%;">
+                        4.8x
+                    </span>
+                    <br>
+                    <span class="dark-grey" style="font-weight: 100; font-size: 20px">
+                        lower latency<sup style="font-weight:90; font-size: 60%;"><a href="#footnote-2" class="footnote-reference">2</a></sup>
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-8 text-left no-padding" style="">
+                <div>
+                    <h1>
+                        <font class="dark-red">
+                            There is magic in every IO.
+                        </font>
+                        <font class="mid-grey">
+                            Each request is intelligently prioritized and streamlined to reduce contention and eliminate hotspots.
+                        </font>
+                        <!--
+                            For a more perfect storage system.
+                            A more perfect storage system.
+                        -->
+                    </h1>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container text-left">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                 <h1>
+                    <font class="dark-red">
+                       Phalanx be nimble.
+                    </font>
+                    <font class="mid-grey">
+                        Our focus on performance and scalability means delivering consistent and predicable performance at every scale.
+                        So you can store and access data faster than ever.
+
+                        <!--
+                            We build Phalanx with a focus on performance and scalability.
+                            This means delivering consistent and predicable performance at every scale.
+                            And that means a faster and more for your data.
+                            hat means a faster and reliable storage experience.
+                        -->
+                    </font>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <div class="container">
+        <div class="row" style="margin:auto">
+            <div class="col-lg-12 col-md-12">
+                <img src="/img/phalanx-performance/splash.jpeg" style="object-fit: fit; width: 100%; height: auto;">
             </div>
         </div>
     </div>
