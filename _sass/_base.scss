@@ -131,6 +131,10 @@ p {
     margin-top:20px;
 }
 
+.white {
+    color: white;
+}
+
 .light-grey {
     color: $light-grey;
 }
@@ -159,6 +163,47 @@ p {
 .hot-pink {
     color: #ff1d8e;
 }
+
+.btn-news
+{
+    white-space: nowrap;
+    padding: 15px 30px;
+    border-color: black;
+    border: solid;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.btn-news:hover, .btn-news:focus, .btn-news:active, .btn-news.active, .open>.dropdown-toggle.btn-news
+{
+    text-decoration: none;
+}
+
+a.btn-news:hover {
+    text-decoration: none;
+}
+
+a.btn-news:active
+{
+    text-decoration: none;
+}
+
+a.fbtn-news:link
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a.btn-news:visited {
+    text-decoration: none;
+}
+
+// .modal-content{
+//     -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0);
+//     -moz-box-shadow: 0 5px 15px rgba(0,0,0,0);
+//     -o-box-shadow: 0 5px 15px rgba(0,0,0,0);
+//     box-shadow: 0 5px 15px rgba(0,0,0,0);
+// }
 
 .lnum {
     font-variant-numeric: lining-nums;
