@@ -1,71 +1,73 @@
-<script>
-    var videoURL;
-
-    document.addEventListener("DOMContentLoaded", function(event) {
-        /* Get iframe src attribute value i.e. YouTube video url
-        and store it in a variable */
-        videoURL = $("#SDC2020Video").attr('src');
-
-        /* Assign empty url value to the iframe src attribute when
-        modal hide, which stop the video playing */
-        $("#SDC2020VideoModalDialog").on('hide.bs.modal', function(){
-            $("#SDC2020Video").attr('src', '');
-        });
-
-        /* Assign the initially stored url back to the iframe src
-        attribute when modal is displayed again */
-        $("#SDC2020VideoModalDialog").on('show.bs.modal', function(){
-            $("#SDC2020Video").attr('src', videoURL);
-        });
-    });
-</script>
-
-<div id="SDC2020VideoModalDialog" class="modal fade" data-backdrop="false">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="opacity: 1;"><span aria-hidden="true"><i class="far fa-window-close dark-red"></i></span></button>
-                <h4 class="modal-title" id="myModalLabel">KALISTA IO SDC 2020</h4>
+<section id="news" class="">
+    <div class="container">
+        <div class="row" style="margin:auto;">
+            <div class="col-lg-12 col-md-12 text-center lnum">
+                <h1 class="black">
+                    <font style="font-weight: 100; font-size: 120%;">
+                        A new partnership
+                    </font>
+                </h1>
             </div>
-            <div class="modal-body no-padding">
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe id="SDC2020Video" class="embed-responsive-item" frameborder="0" width="560" height="315" src="//www.youtube.com/embed/vEwTGrTzhGk" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container">
+        <div class="row" style="margin:auto;">
+            <div class="col-lg-12 col-md-12 text-center lnum">
+                <img src="img/front/seagate+kalista.png" style="object-fit: fit; width: 80%; height: auto;">
+            </div>
+        </div>
+        <div class="row" style="margin:auto;">
+            <div class="col-lg-12 col-md-12 lnum">
+                <h3 class="mid-grey">
+                    <font style="font-weight: 100; font-size: 150%;">
+                        Working together to address the challenges of IO density, capacity and total cost of ownership.
+                    </font>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row equal-height" style="margin:auto;">
+            <div class="col-lg-6 col-md-6 text-left lnum" style="align-self: center; margin-bottom: 10px;">
+                <img src="/img/front/hand-stack.jpg" style="object-fit: fit; width: 100%; height: auto;">
+            </div>
+
+            <div class="col-lg-6 col-md-6 text-left lnum" style="">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 text-left lnum" style="align-self: center;">
+                        <h1 class="dark-blue">
+                            <font style="font-weight: 100; font-size: 120%;">
+                                Innovation, passion and commitment.
+                            </font>
+                        </h1>
+                        <h2 class="dark-grey">
+                            Kalista is partnering with the world's technology leaders to answer tomorrow's IT challenges.
+                            We believe everything is possible to those who try.
+                            Join us.
+                        </h2>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 text-left lnum" style="align-self: bottom;">
+                        <h3><font class="dark-red" style="font-weight:700;"><a href=/partners>Learn more</a> ></font></h3>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<section id="news" class="">
-    <div class="container">
-        <div class="row" style="margin:auto;">
-            <div class="col-lg-12 col-md-12 text-left lnum">
-                <img src="/img/front/logo_and_phalanx_transparent.png" style="object-fit: fit; width: 50%; height: auto; margin-top: 100px;">
-                <h1 class="hot-pink">
-                    It's show time at SNIA developer conference.
-                </h1>
-                <h2 class="mid-grey">
-                    Kalista Phalanx Storage System is designed for simplicity and usability.
-                    Engineered to enable devices to perform at their best
-                    and built to remove barriers to next generation technologies
-                    — Phalanx is redefining what is possible in storage.
-                </h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-2 col-md-2 lnum text-left" style="margin-top: 50px; margin-bottom: 50px;">
-                <a href="#SDC2020VideoModalDialog" class="btn-news" data-toggle="modal">Watch the talk</a>
-            </div>
-
-            <div class="col-lg-2 col-md-2 lnum text-left" style="margin-top: 50px; margin-bottom: 50px;">
-                <a href="/resources/sdc2020/Improve-Distributed-Storage-System-TCO-with-Host-Managed-SMR-HDDs-v1.pdf" class="btn-news">Read slides</a>
-            </div>
-
-            <div class="col-lg-8 col-md-8 lnum" style="margin-top: 50px; margin-bottom: 50px;">
-            </div>
-        </div>
-    </div>
+    <br>
+    <br>
 
     <div class="container text-center">
         <div class="row" style="margin:auto">
