@@ -76,13 +76,27 @@ p {
     color: white;
 }
 
+.bg-dark-2 {
+    background-color: #151516;
+}
+
 .bg-black {
     background-image: linear-gradient($theme-dark, black);
     color: white;
 }
 
+.bg-black-rev {
+    background-image: linear-gradient(black, $theme-dark);
+    color: white;
+}
+
+.bg-solid-black {
+    background-color:black;
+    color: white;
+}
+
 .bg-white {
-    background-image: white;
+    background-color: white;
     color: black;
 }
 
@@ -96,6 +110,11 @@ p {
 
 .bg-solid-grey {
     background-color: #f5f5f7;
+}
+
+.bg-dark-red {
+    color: white;
+    background-color: $dark-red;
 }
 
 .equal-height {
@@ -172,6 +191,25 @@ p {
     color: #3d85c6;
 }
 
+.teal {
+    color: #1a9988;
+}
+
+.light-blue
+{
+    color: #6aa4c8;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+
+.round-corners {
+    border-radius: 25px;
+    padding: 20px;
+}
+
 .btn-news
 {
     white-space: nowrap;
@@ -236,7 +274,6 @@ img.vertical-center-align-image
     left:0;
     right:0;
 }
-
 
 .parallax {
   /* The image used */
